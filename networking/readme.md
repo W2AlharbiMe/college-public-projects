@@ -2,7 +2,7 @@
 
 in this course we will use cisco packet trace
 
-### Cisco Packet Trace Helpers
+### Cisco Packet Trace Notes
 
 1. always use router CLI
 2. IPs should start with `192.168.x.x`
