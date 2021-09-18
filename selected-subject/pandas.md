@@ -3,7 +3,13 @@
 
 
 #### Read csv file
-```
+```python
 import pandas as pd
-dataFile = pd.read_csv('path/to/datafile.csv')
+data = pd.read_csv('path/to/datafile.csv')
+```
+
+
+#### Create dataframe
+```python
+df = pd.DataFrame(data)
 ```
