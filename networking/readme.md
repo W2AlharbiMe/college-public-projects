@@ -15,5 +15,10 @@ in this course we will use cisco packet trace
 - [ ] `no sh`
 
 4. command to ping routers/etc.. from CLI <br>
-   - [ ] first press `ctrl + z`
+
+   - [ ] first press `ctrl + z` or `do <command>`
    - [ ] `ping <IP> // ping 192.168.3.1`
+
+5. cool shortcuts:
+   - [ ] `do sh ip route`
+   - [ ] `do ping <IP>`
