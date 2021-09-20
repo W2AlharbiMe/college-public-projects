@@ -4,7 +4,7 @@ import pandas as pd
 from pandas._libs.missing import NA
 
 ## Read csv
-csv1 = pd.read_csv('../../dataFile.csv')
+csv1 = pd.read_csv('../dataFile.csv')
 
 ## create dataframe
 df1 = pd.DataFrame(csv1)
