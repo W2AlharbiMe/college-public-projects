@@ -1,8 +1,7 @@
 ## Mini Project
-- Language: 
-- Framework: 
-- Libraries: 
-- Reason: 
+- Language: **Python**
+- Framework: **Flask**
+- Libraries: **N/A**
 
 
 ### Submission
