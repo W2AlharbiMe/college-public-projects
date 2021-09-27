@@ -1,0 +1,212 @@
+#!/usr/bin/env python
+# coding: utf-8
+
+# ### Data Frame with Pandas Library
+
+# 1. Install Numpy and Pandas
+# 2. Create dictionary and dataframe
+# 3. Creat labels
+# 4. read file to dataframes
+# 5. DataFrame operations
+# 6. Plotting data
+# 7. save to file
+
+# In[2]:
+
+
+import pandas as pd
+
+a = [1, 7, 2]
+print(a)
+
+
+# In[3]:
+
+
+myvar = pd.Series(a)
+
+print(myvar)
+
+
+# In[4]:
+
+
+myvar = pd.Series(a, index = ["x", "y", "z"])
+print(myvar)
+
+
+# In[7]:
+
+
+calories = {"day1": 420, "day2": 380, "day3": 390}
+
+myvar1 = pd.Series(calories)
+print(myvar1)
+
+myvar2 = pd.Series(calories, index = ["day1", "day2"])
+print(myvar2)
+
+
+# In[8]:
+
+
+#creating dataFrame 
+mydataset = {
+  'cars': ["BMW", "Volvo", "Ford"],
+  'passings': [3, 7, 2]
+}
+
+df = pd.DataFrame(mydataset)
+
+print(df)
+
+
+# In[12]:
+
+
+#DataFrame Access
+#Access row index:
+print(df.loc[1])
+
+
+# In[13]:
+
+
+#specify a lsit of index 
+print(df.loc[[0, 2]])
+
+
+# In[14]:
+
+
+print(df.loc[0:2])
+
+
+# In[15]:
+
+
+#assign names for index
+data = {
+  "calories": [420, 380, 390],
+  "duration": [50, 40, 45]
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+df = pd.DataFrame(data, index = ["day1", "day2", "day3"])
+print(df)
+
+print(df.index)
+
+
+# In[16]:
+
+
+#access by index name
+print(df.loc["day2"])
+
+
+# In[18]:
+
+
+#Reading data from a file
+df = pd.read_csv('dataFile.csv')
+print(df)
+
+
+
+
+# In[19]:
+
+
+#print entire data
+#print(df.to_string())
+
+#first 10 rows
+print(df.head())
+
+
+# In[20]:
+
+
+#last 5 rows
+print(df.tail()) 
+
+
+# In[21]:
+
+
+#print information about the data
+print(df.info()) 
+
+
+# In[24]:
+
+
+print(df[0:20])
+
+
+# In[25]:
+
+
+#print(new_df.to_string())
+#print(df.tail().to_string())
+#drop rows with empty cells
+new_df = df.dropna(inplace = True)
+
+#remove rows that has empty values in specific column
+df.dropna(subset=['Calories'], inplace = True)
+
+#fill N/A cells with a specific values
+new_df = df.fillna(130)
+df["Calories"].fillna(130, inplace = True)
+
+
+# In[ ]:
+
+
+
+
+
+# In[26]:
+
+
+#calculate the mean for a column
+x = df["Calories"].mean()
+print(x)
+
+#calculate median, maximum, minimum, mode, etc.....
+
+
+# In[27]:
+
+
+#iterate on entire dataFrame usind index
+#delete rows that has Duration > 120
+for x in df.index:
+  if df.loc[x, "Duration"] > 120:
+    df.drop(x, inplace = True)
+
+
+# In[28]:
+
+
+#calulate each values in column
+i = df["Duration"].value_counts()
+print(i)
+
+#access a specific cell
+#df.at[i, "Duration"] = ... 
+#df["Duration"].iat[i] = ...
+
+
+# ### refer to the following link for pandas documentation:
+# 
+# https://pandas.pydata.org/docs/reference/frame.html
+
+# In[ ]:
+
+
+
+
