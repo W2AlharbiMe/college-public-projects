@@ -17,7 +17,7 @@ while not terminate:
         print("the bugs number should be greater than 0.")
         continue
 
-
+    # accumulate bugs and days
     total_bugs += bugs
     days_count += 1
 
