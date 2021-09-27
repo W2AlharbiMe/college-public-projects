@@ -1,9 +1,9 @@
-### Lab 1:
+### Lab 1(Canceled):
 
 - [ ] add two routers
 - [ ] add two PCs
 - [ ] connect each PC to each router
-- [ ] connect routers 
+- [ ] connect routers
 - [ ] configure routers
 - [ ] configure PCs
 
@@ -11,13 +11,13 @@
 
 - use router CLI
 - use static routing to achieve the goal
+
 ---
 
 ## Goal:
 
 PC 1 is connected to router 1 and PC 2 is connected to router 2,
 <br>**ping PC 2 from PC 1**
-
 
 ### End Result:
 
