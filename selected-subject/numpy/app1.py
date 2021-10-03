@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 import pandas as pd
 
-data = np.arange(10,51)
+data = np.random.randint(10, 51, size=10)
 print("\n",data)
 
 print("\n",data.mean())
@@ -22,6 +22,7 @@ print("\n",a*4)
 b = np.random.randint(1, 11, 12)
 
 b=b.reshape(3,4)
+
 print("\n", b)
 print("\n",b.T)
 print("--------------------------------------------")
