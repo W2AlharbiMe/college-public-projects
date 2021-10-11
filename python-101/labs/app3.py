@@ -13,7 +13,7 @@ total = 0
 for i in range(1, 6):
     price = input(f"Enter price for item #{i}: ")
 
-    # convert price to price
+    # convert price to float
     subtotal += float(price)
 
 
