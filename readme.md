@@ -12,3 +12,4 @@
 - Software Engineering 
 - Multimedia System Development
 - Mobile Development 1 in Kotlin Language
+- Databases
